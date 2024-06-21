@@ -17,7 +17,7 @@ struct DemoStore {
     
     func getPersons() -> [Person] {
         var persons = [Person]()
-        var desc = Desc.shared
+        let desc = Desc.shared
         for _ in 0..<20 {
             let person = Person(name: desc.words())
             persons.append(person)
