@@ -27,11 +27,13 @@ struct StoryItemView : View {
     let person: Person
     var body: some View {
         VStack(spacing: 8) {
-            Image("placeholder")
-                .resizable()
-                .frame(width: 64, height: 64, alignment: .center)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .overlay(Circle().stroke(.red, lineWidth: 2))
+            Button(action: {}) {
+                Image("placeholder")
+                    .resizable()
+                    .frame(width: 64, height: 64, alignment: .center)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(Circle().stroke(.red, lineWidth: 2))
+            }
             Text(person.name)
                 .font(.caption)
                 .lineLimit(1)

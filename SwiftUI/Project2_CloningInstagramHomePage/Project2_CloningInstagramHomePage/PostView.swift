@@ -65,7 +65,7 @@ struct PostView: View {
                 }
             }
             .foregroundColor(.black)
-            .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+            .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 16))
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("1.4 likes").font(.caption).bold()
@@ -91,8 +91,8 @@ struct PostView: View {
                     })
                 }
             }
-            .padding(.leading, 16)
-            .padding(.trailing, 16)
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
         }
         .padding(.bottom, 24)
     }
